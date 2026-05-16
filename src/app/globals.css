@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F5F0EB;
+  --foreground: #0D0D0D;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0D0D0D;
+    --foreground: #F5F0EB;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+}
+
+/* Base Animations & Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+::selection {
+  background-color: #C9A96E;
+  color: #0D0D0D;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A96E;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C4714A;
+}
+
+/* Utilities for sections */
+.section-padding {
+  @apply py-24 md:py-32;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-6 md:px-12;
+}
+
+@media (max-width: 576px) {
+  .sm\:min-h-\[450px\] {
+    min-height: 450px;
+  }
+}
