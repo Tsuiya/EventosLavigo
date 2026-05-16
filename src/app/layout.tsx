@@ -28,6 +28,11 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
+  twitter: {
+    card: "summary", // usa formato quadrado pequeno (ideal para o favicon)
+    title: "Lavigo Studios | Fotografia e Vídeo para Eventos em Ibitinga, SP",
+    description: "Casamentos, aniversários, ensaios e eventos corporativos em Ibitinga e região. Fotografia e vídeo com narrativa autoral. Solicite seu orçamento.",
+  },
 };
 
 export default function RootLayout({
