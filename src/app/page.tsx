@@ -11,19 +11,19 @@ export default function Home() {
       title: "Casamentos",
       description: "Cobertura completa, focada na emoção e nos detalhes invisíveis.",
       href: "/casamentos",
-      imageUrl: "https://res.cloudinary.com/drczznkji/image/upload/v1776972786/LR-6_kdkf2b.jpg",
+      imageUrl: "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1776972786/LR-6_kdkf2b.jpg",
     },
     {
       title: "Aniversários",
       description: "Registros autênticos para celebrar a vida e as pessoas que importam.",
       href: "/aniversarios",
-      imageUrl: "https://res.cloudinary.com/drczznkji/image/upload/v1778605998/Luisa_2anos_jeblpm.jpg",
+      imageUrl: "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1778605998/Luisa_2anos_jeblpm.jpg",
     },
     {
       title: "Ensaios Externos",
       description: "Retratos cinematográficos com direção leve e natural.",
       href: "/ensaios",
-      imageUrl: "https://res.cloudinary.com/drczznkji/image/upload/v1778605672/agatha-66_iu4u8q.jpg",
+      imageUrl: "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1778605672/agatha-66_iu4u8q.jpg",
     },
     {
       title: "Corporativo",
@@ -34,12 +34,12 @@ export default function Home() {
   ];
 
   const portfolioPreview = [
-    "https://res.cloudinary.com/drczznkji/image/upload/v1776972786/LR-20_oyt27f.jpg",
-    "https://res.cloudinary.com/drczznkji/image/upload/v1776972857/LR-1_schl7z.jpg",
-    "https://res.cloudinary.com/drczznkji/image/upload/v1776972786/LR-3_yip935.jpg",
-    "https://res.cloudinary.com/drczznkji/image/upload/v1778601027/B_D-27_pwvsaa.jpg",
-    "https://res.cloudinary.com/drczznkji/image/upload/v1776972786/LR-5_j2ri4t.jpg",
-    "https://res.cloudinary.com/drczznkji/image/upload/v1778601027/B_D-41_ka3fy6.jpg",
+    "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1776972786/LR-20_oyt27f.jpg",
+    "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1776972857/LR-1_schl7z.jpg",
+    "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1776972786/LR-3_yip935.jpg",
+    "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1778601027/B_D-27_pwvsaa.jpg",
+    "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1776972786/LR-5_j2ri4t.jpg",
+    "https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1778601027/B_D-41_ka3fy6.jpg",
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function Home() {
         primaryCtaHref="https://wa.me/5516991609339?text=Olá! Vim pelo site e gostaria de solicitar um orçamento."
         secondaryCtaText="Ver nossos trabalhos"
         secondaryCtaHref="/portfolio"
-        bgImageUrl="https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.2.2_pbxpfm.jpg"
+        bgImageUrl="https://res.cloudinary.com/drczznkji/image/upload/f_auto,q_auto/v1778602019/Still_2026-03-07_154153_2.2.2_pbxpfm.jpg"
       />
 
       {/* SEÇÃO 2 — Serviços */}
@@ -101,6 +101,7 @@ export default function Home() {
                   src={src}
                   alt={`Portfolio preview ${idx + 1}`}
                   fill
+                  quality={60}
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />

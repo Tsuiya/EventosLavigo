@@ -42,6 +42,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${cormorant.variable} ${jost.variable} scroll-smooth`}>
+      <head>
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+      </head>
       <body className="font-sans antialiased min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

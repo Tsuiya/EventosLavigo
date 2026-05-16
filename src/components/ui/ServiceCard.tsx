@@ -26,6 +26,7 @@ export default function ServiceCard({ title, description, href, imageUrl }: Serv
             src={imageUrl}
             alt={title}
             fill
+            quality={60}
             className="object-cover opacity-60 transition-opacity duration-300 group-hover:opacity-40"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           />
