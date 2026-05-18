@@ -53,7 +53,7 @@ export default function TestimonialCarousel() {
         <div className="relative max-w-4xl mx-auto px-12">
           <Quote className="w-16 h-16 text-lavigo-gold/20 mx-auto mb-8" />
 
-          <div className="overflow-hidden min-h-[250px] sm:min-h-[450px] relative">
+          <div className="overflow-hidden min-h-[250px] sm:max-h-[450px] relative">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
